@@ -22,6 +22,9 @@ header section {
   background: #FFD800;
 }
 
+.filtro-card-opacity a{
+  color: black  !important;
+}
 @media (max-width: 1515px) {
   header section {
     max-width: 100%;
@@ -114,7 +117,7 @@ button:hover {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 10;
-		background: url('../arrow.png') no-repeat center center / 32px;
+		background: url('../images/arrow.png') no-repeat center center / 32px;
 		width: 50px;
 		height: 50px;
 		text-indent: -9999px;
@@ -122,7 +125,7 @@ button:hover {
 }
 
 .previousButton:hover, .nextButton:hover {
-  background: url('../arrow.png') no-repeat center center / 42px;
+  background: url('../images/arrow.png') no-repeat center center / 42px;
 }
 
 .previousButton {
@@ -214,10 +217,98 @@ button:hover {
   display: block;
 }
 
-.opacityNav { 
+.opacityNav, footer{ 
   opacity: 0.9;
   z-index: 111;
 }
+.text-type-section {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.text-type-section h2{
+  font: bold 35px/45px "Ubuntu", sans-serif;
+}
+
+.filtro-card-opacity{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.border-none{
+  border: none !important;
+}
+
+.btn-home-ver-mas{
+  width: 50%;
+  margin: 0px auto !important;
+  border-radius: 20px 20px 20px 20px !important;
+}
+
+.btn-home-ver-mas2{
+  margin: 0px auto !important;
+  border-radius: 20px 20px 20px 20px !important;
+}
+
+.filtro-card-opacity:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+li a i, i {
+  color: #888 !important;
+  font-size: 22px;
+}
+.text-dec-none{
+  text-decoration: none !important;
+  color: #888 !important;
+}
+
+.text-dec-none:hover{
+  color:palevioletred !important;
+}
+
+.texto-home h1 {
+  font-size:2.1em;
+  text-transform:uppercase;
+  display:inline-block;
+  width:100%;
+}
+footer, .bg-black-home{ 
+  background-color: #000000;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* buscador clases  */
+
+.form-search{
+  width: 100%;
+  margin: 0px auto !important;
+  height: 55px;
+  border-radius: 20px 20px 20px 20px !important;
+  caret-color:black !important; 
+}
+
+.form-search:hover{
+  border-color:palevioletred !important; 
+}
+
+.filter-icon-size{
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.filter-icon-size:hover{
+  color:palevioletred !important;
+}
+/* fin buscador clases */
+
+
 @media (max-height: 500px) {
   .slider-wrapper, .slide {
     height: calc(100vh - 75px);
